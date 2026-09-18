@@ -43,6 +43,7 @@ export const translations = {
     privacyPolicy: 'Privacy Policy',
     termsOfService: 'Terms of Service',
     callUs: 'Call',
+    subscribe: 'Connect'
   },
   es: {
     phone: '(631) 943-2157',
@@ -88,6 +89,7 @@ export const translations = {
     privacyPolicy: 'Política de Privacidad',
     termsOfService: 'Términos de Servicio',
     callUs: 'Llamar al',
+    subscribe: 'Connect'
   }
 };
 
