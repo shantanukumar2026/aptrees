@@ -17,6 +17,14 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const services = [
+    { title: t.service1, img: "/images/treemange.jpg" },
+    { title: t.service2, img: "/images/istockphoto-2230881648-2048x2048.jpg" },
+    { title: t.service3, img: "/images/istockphoto-1300474514-2048x2048.jpg" },
+    { title: t.service4, img: "/images/istockphoto-2267218361-2048x2048.jpg" },
+    { title: t.service5, img: "/images/istockphoto-1476419509-2048x2048.jpg" },
+    { title: t.service6, img: "/images/istockphoto-1845458299-2048x2048.jpg" },
+  ];
 
   return (
     <>
@@ -35,19 +43,21 @@ function App() {
           </a>
 
           <div className="top-links">
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-              {t.history}
-            </button>
+            <a href="tel:+16319432157" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              {t.phone}
+            </a>
 
-            <button>
+            <a href="#services" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              {t.locations}
-            </button>
-            <button>
+              {t.location}
+            </a>
+
+            <a href="#contact" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-              {t.contact}
-            </button>
+              {t.freeEstimate}
+            </a>
+
             <select
               value={lang}
               onChange={(e) => setLang(e.target.value as 'en' | 'es')}
@@ -76,16 +86,16 @@ function App() {
           opacity: scrolled ? 0 : 1
         }}>
           <nav className="bottom-nav">
-            <button>{t.products} <div className="nav-underline"></div></button>
-            <button>{t.capabilities} <div className="nav-underline"></div></button>
-            <button>{t.industries} <div className="nav-underline"></div></button>
-            <button>{t.quality} <div className="nav-underline"></div></button>
-            <button>{t.company} <div className="nav-underline"></div></button>
+            <a href="#services" style={{ textDecoration: 'none' }}><button>{t.navServices} <div className="nav-underline"></div></button></a>
+            <a href="#why-us" style={{ textDecoration: 'none' }}><button>{t.navWhyUs} <div className="nav-underline"></div></button></a>
+            <a href="#about" style={{ textDecoration: 'none' }}><button>{t.navAbout} <div className="nav-underline"></div></button></a>
+            <a href="#contact" style={{ textDecoration: 'none' }}><button>{t.navContact} <div className="nav-underline"></div></button></a>
           </nav>
 
-          <div className="search-box">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary-dark)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }}><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
-            <input type="text" placeholder={t.searchPlaceholder} />
+          <div className="header-cta-wrapper">
+            <a href="#contact" className="nav-cta-btn">
+              {t.freeEstimate} →
+            </a>
           </div>
         </div>
       </header>
@@ -93,6 +103,7 @@ function App() {
       <section className="hero-section">
         <div className="hero-left">
           <div className="hero-content">
+
             <h1 className="hero-title">
               {t.heroTitlePart1} <span>{t.heroTitlePart2}</span> {t.heroTitlePart3}
             </h1>
@@ -100,48 +111,32 @@ function App() {
               {t.heroSub}
             </p>
             <div className="hero-actions">
-              <a href="#projects" className="btn-primary">
-                {t.viewProjects} <span>→</span>
+              <a href="#services" className="btn-primary">
+                {t.ourServices} <span>→</span>
               </a>
-              <a href="#consultation" className="btn-secondary">
-                {t.requestConsultation}
+              <a href="tel:+16319432157" className="btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                (631) 943-2157
               </a>
             </div>
           </div>
         </div>
 
         <div className="hero-right">
-          <img src="/images/istockphoto-1491158797-2048x2048.jpg" className="hero-bg" alt="Landscape Architecture" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          <img src="/images/istockphoto-1491158797-2048x2048.jpg" className="hero-bg" alt="Professional Tree Care and Landscaping" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
 
           <div className="floating-stats">
             <div className="stat-item">
-              <span className="stat-value">5+</span>
+              <span className="stat-value">15+</span>
               <span className="stat-label">{t.yearsExperience}</span>
             </div>
             <div className="stat-item">
-              <span className="stat-value">50</span>
-              <span className="stat-label">{t.awardsWon}</span>
+              <span className="stat-value">100%</span>
+              <span className="stat-label">{t.licensedInsured}</span>
             </div>
             <div className="stat-item">
-              <span className="stat-value">1k+</span>
-              <span className="stat-label">{t.acresDesigned}</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Extreme Edge UI kept on the right side overlay */}
-        <div className="extreme-edge">
-          <div className="extreme-edge-text">{t.connectWithUs}</div>
-          <div className="extreme-edge-icons">
-            <div className="icon-wrapper">
-              <a href="#chat" className="side-btn-filled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg>
-              </a>
-            </div>
-            <div className="icon-wrapper">
-              <a href="#call" className="side-btn-filled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
-              </a>
+              <span className="stat-value">2,500+</span>
+              <span className="stat-label">{t.treesServiced}</span>
             </div>
           </div>
         </div>
@@ -150,7 +145,7 @@ function App() {
       <section id="services" className="services-section">
         <div style={{ textAlign: 'center', marginBottom: '80px', padding: '0 20px' }}>
           <h2 className="font-display" style={{ fontSize: '3rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px' }}>
-            {t.servicesTitle}
+            {t.servicesHeading}
           </h2>
           <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>
             {t.servicesSub}
@@ -158,14 +153,7 @@ function App() {
         </div>
 
         <div className="services-grid">
-          {[
-            { title: t.service1, img: "/images/treemange.jpg" },
-            { title: t.service2, img: "/images/istockphoto-2230881648-2048x2048.jpg" },
-            { title: t.service3, img: "/images/istockphoto-1300474514-2048x2048.jpg" },
-            { title: t.service4, img: "/images/istockphoto-2267218361-2048x2048.jpg" },
-            { title: t.service5, img: "/images/istockphoto-1476419509-2048x2048.jpg" },
-            { title: t.service6, img: "/images/istockphoto-1845458299-2048x2048.jpg" },
-          ].map((service, i) => (
+          {services.map((service, i) => (
             <div key={i} className="service-card" style={{ display: 'block', padding: 0, overflow: 'hidden', position: 'relative', height: '280px', borderRadius: '16px', border: 'none' }}>
               <img src={service.img} alt={service.title} style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }} />
               <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '40px 20px 20px', background: 'linear-gradient(transparent, rgba(0,0,0,0.9))' }}>
@@ -176,38 +164,35 @@ function App() {
         </div>
       </section>
 
-      <section id="capabilities" className="glass-section">
+      <section id="why-us" className="trust-section">
         <div style={{ textAlign: 'center', marginBottom: '80px', padding: '0 20px' }}>
           <h2 className="font-display" style={{ fontSize: '3rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px' }}>
-            {t.capabilitiesTitlePart1} <span style={{ color: 'var(--primary-light)' }}>{t.capabilitiesTitlePart2}</span> {t.capabilitiesTitlePart3}
+            {t.whyChooseHeading} <span style={{ color: 'var(--primary-light)' }}>AP Trees</span>
           </h2>
           <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>
-            {t.capabilitiesSub}
+            {t.whyChooseSub}
           </p>
         </div>
 
-        <div className="glass-grid">
-          <div className="glass-card">
-            <div className="glass-card-accent"></div>
-            <div className="glass-icon-wrapper">
+        <div className="trust-grid">
+          <div className="trust-card">
+            <div className="trust-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
             </div>
             <h3>{t.whoWeAre}</h3>
             <p>{t.whoWeAreDesc}</p>
           </div>
 
-          <div className="glass-card">
-            <div className="glass-card-accent"></div>
-            <div className="glass-icon-wrapper">
+          <div className="trust-card">
+            <div className="trust-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
             </div>
             <h3>{t.whatWeDo}</h3>
             <p>{t.whatWeDoDesc}</p>
           </div>
 
-          <div className="glass-card">
-            <div className="glass-card-accent"></div>
-            <div className="glass-icon-wrapper">
+          <div className="trust-card">
+            <div className="trust-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
             <h3>{t.whyTrustUs}</h3>
@@ -216,19 +201,19 @@ function App() {
         </div>
       </section>
 
-      <footer>
+      <footer id="contact">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a href="#" className="footer-logo" style={{ display: 'inline-block', marginBottom: '16px' }}>
+            <a href="#" className="footer-logo">
               <Logo className="app-logo footer-logo-img" />
             </a>
             <p className="footer-desc">
               {t.footerDesc}
             </p>
-            <div style={{ marginTop: '16px', color: 'var(--text-muted)' }}>
+            <div className="footer-contact">
               <p>133 New York Ave </p>
               <p>Huntington, NY 11743</p>
-              <p style={{ marginTop: '8px' }}>+1 (631) 943-2157</p>
+              <p className="footer-phone">+1 (631) 943-2157</p>
               <p>Email :- nick@aptreescorp.com</p>
             </div>
           </div>
@@ -236,20 +221,20 @@ function App() {
           <div>
             <h4 className="footer-title">{t.navigation}</h4>
             <ul className="footer-links">
-              <li><a href="#capabilities">{t.capabilities}</a></li>
-              <li><a href="#services">{t.productsAndServices}</a></li>
-              <li><a href="#industries">{t.industries}</a></li>
-              <li><a href="#quality">{t.qualityAndCompliance}</a></li>
+              <li><a href="#services">{t.navServices}</a></li>
+              <li><a href="#why-us">{t.navWhyUs}</a></li>
+              <li><a href="#services">{t.service1}</a></li>
+              <li><a href="#contact">{t.service6}</a></li>
             </ul>
           </div>
 
-          <div>
+          <div id="about">
             <h4 className="footer-title">{t.company}</h4>
             <ul className="footer-links">
-              <li><a href="#about">{t.aboutUs}</a></li>
-              <li><a href="#careers">{t.careers}</a></li>
-              <li><a href="#news">{t.newsAndMedia}</a></li>
-              <li><a href="#contact">{t.contact}</a></li>
+              <li><a href="#why-us">{t.navAbout}</a></li>
+              <li><a href="#services">{t.navServices}</a></li>
+              <li><a href="tel:+16319432157">{t.callUs} (631) 943-2157</a></li>
+              <li><a href="#contact">{t.freeEstimate}</a></li>
             </ul>
           </div>
 
