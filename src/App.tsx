@@ -159,7 +159,7 @@ function App() {
 
         <div className="services-grid">
           {[
-            { title: t.service1, img: "/treemange.jpg" },
+            { title: t.service1, img: "/images/treemange.jpg" },
             { title: t.service2, img: "/images/istockphoto-2230881648-2048x2048.jpg" },
             { title: t.service3, img: "/images/istockphoto-1300474514-2048x2048.jpg" },
             { title: t.service4, img: "/images/istockphoto-2267218361-2048x2048.jpg" },
