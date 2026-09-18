@@ -10,10 +10,10 @@ export const translations = {
     quality: 'Quality',
     company: 'Company',
     searchPlaceholder: 'Search resources...',
-    heroTitlePart1: 'DESIGNING',
-    heroTitlePart2: "TOMORROW'S",
-    heroTitlePart3: 'LANDSCAPES',
-    heroSub: 'We merge architectural precision with ecological intelligence to create sustainable, breathtaking environments that endure for generations.',
+    heroTitlePart1: 'HEALTHY TREES',
+    heroTitlePart2: "SAFE PROPERTY",
+    heroTitlePart3: 'BEAUTIFUL SPACES',
+    heroSub: 'Professional tree care services for healthier trees, safer properties, and beautiful outdoor spaces.',
     viewProjects: 'View Projects',
     requestConsultation: 'Request Consultation',
     yearsExperience: 'Years Experience',
@@ -25,12 +25,17 @@ export const translations = {
     capabilitiesTitlePart3: 'of Trust',
     capabilitiesSub: 'Engineered for absolute reliability. Designed to redefine environmental standards.',
     whoWeAre: 'WHO WE ARE',
-    whoWeAreDesc: 'Industry leaders in advanced landscape architecture, forged on a foundation of precision and environmental stewardship.',
+    whoWeAreDesc: 'We are a local tree care company dedicated to keeping your trees healthy, safe, and beautiful.',
+
     whatWeDo: 'WHAT WE DO',
-    whatWeDoDesc: 'We engineer cutting-edge outdoor infrastructure. Implementing sustainable systems for complex urban and natural environments.',
+
+    whatWeDoDesc: 'From tree care and planting to stump grinding, inspections, and removal, we handle your tree needs from start to finish.',
+
     whyTrustUs: 'WHY TRUST US',
-    whyTrustUsDesc: "Decades of rigorous design. Our solutions don't just meet aesthetic standards—they define ecological responsibility.",
-    footerDesc: 'Precision-engineered landscaping management infrastructure dedicated to creating sustainable, beautiful, and enduring outdoor environments.',
+
+    whyTrustUsDesc: 'We care about your trees and your property. Our team works safely, professionally, and with attention to detail.',
+
+    footerDesc: 'Reliable tree care for healthier trees, safer properties, and beautiful outdoor spaces.',
     navigation: 'Navigation',
     productsAndServices: 'Services',
     qualityAndCompliance: 'Quality & Compliance',

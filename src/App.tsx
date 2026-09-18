@@ -115,15 +115,15 @@ function App() {
 
           <div className="floating-stats">
             <div className="stat-item">
-              <span className="stat-value">25+</span>
+              <span className="stat-value">5+</span>
               <span className="stat-label">{t.yearsExperience}</span>
             </div>
             <div className="stat-item">
-              <span className="stat-value">150</span>
+              <span className="stat-value">50</span>
               <span className="stat-label">{t.awardsWon}</span>
             </div>
             <div className="stat-item">
-              <span className="stat-value">5k+</span>
+              <span className="stat-value">1k+</span>
               <span className="stat-label">{t.acresDesigned}</span>
             </div>
           </div>
