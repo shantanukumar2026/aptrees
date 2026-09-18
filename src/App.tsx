@@ -28,8 +28,8 @@ function App() {
           transition: 'background 0.3s ease'
         }}>
           <a href="#" className="logo-container" style={{ display: 'flex', alignItems: 'center' }}>
-            <Logo 
-              className="app-logo header-logo" 
+            <Logo
+              className="app-logo header-logo"
               style={{ height: '100%', alignItems: 'center' }}
             />
           </a>
@@ -39,10 +39,7 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
               {t.history}
             </button>
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-              {t.ourValues}
-            </button>
+
             <button>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
               {t.locations}
@@ -51,13 +48,13 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
               {t.contact}
             </button>
-            <select 
+            <select
               value={lang}
               onChange={(e) => setLang(e.target.value as 'en' | 'es')}
-              style={{ 
-                background: 'transparent', 
-                color: 'white', 
-                border: 'none', 
+              style={{
+                background: 'transparent',
+                color: 'white',
+                border: 'none',
                 cursor: 'pointer',
                 fontFamily: 'inherit',
                 fontWeight: 800,
@@ -114,7 +111,7 @@ function App() {
         </div>
 
         <div className="hero-right">
-          <img src="/images/landscape_hero_1784337352722.png" className="hero-bg" alt="Landscape Architecture" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          <img src="/images/istockphoto-1491158797-2048x2048.jpg" className="hero-bg" alt="Landscape Architecture" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
 
           <div className="floating-stats">
             <div className="stat-item">
@@ -162,12 +159,12 @@ function App() {
 
         <div className="services-grid">
           {[
-            { title: t.service1, img: "/images/irrigation_system_1784337278740.png" },
-            { title: t.service2, img: "/images/landscape_construction_1784337289376.png" },
-            { title: t.service3, img: "/images/landscape_maintenance_1784337299801.png" },
-            { title: t.service4, img: "/images/landscape_lighting_1784337310679.png" },
-            { title: t.service5, img: "/images/pressure_washing_1784337329375.png" },
-            { title: t.service6, img: "/images/drainage_solutions_1784337340038.png" },
+            { title: t.service1, img: "/treemange.jpg" },
+            { title: t.service2, img: "/images/istockphoto-2230881648-2048x2048.jpg" },
+            { title: t.service3, img: "/images/istockphoto-1300474514-2048x2048.jpg" },
+            { title: t.service4, img: "/images/istockphoto-2267218361-2048x2048.jpg" },
+            { title: t.service5, img: "/images/istockphoto-1476419509-2048x2048.jpg" },
+            { title: t.service6, img: "/images/istockphoto-1845458299-2048x2048.jpg" },
           ].map((service, i) => (
             <div key={i} className="service-card" style={{ display: 'block', padding: 0, overflow: 'hidden', position: 'relative', height: '280px', borderRadius: '16px', border: 'none' }}>
               <img src={service.img} alt={service.title} style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -229,10 +226,10 @@ function App() {
               {t.footerDesc}
             </p>
             <div style={{ marginTop: '16px', color: 'var(--text-muted)' }}>
-              <p>132 Lockwood</p>
-              <p>Huntington, NY 11763</p>
-              <p style={{ marginTop: '8px' }}>+1 (631) 327-2544</p>
-              <p>631-827-7408</p>
+              <p>133 New York Ave </p>
+              <p>Huntington, NY 11743</p>
+              <p style={{ marginTop: '8px' }}>+1 (631) 943-2157</p>
+              <p>Email :- nick@aptreescorp.com</p>
             </div>
           </div>
 
@@ -285,7 +282,7 @@ function App() {
         </div>
 
         <div className="footer-bottom">
-          <div>&copy; {new Date().getFullYear()} Eber Jimenez Landscape. {t.rightsReserved}</div>
+          <div>&copy; {new Date().getFullYear()} AP Trees. {t.rightsReserved}</div>
           <div style={{ display: 'flex', gap: '24px' }}>
             <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>{t.privacyPolicy}</a>
             <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>{t.termsOfService}</a>
