@@ -5,6 +5,9 @@ export const translations = {
     freeEstimate: 'Free Estimate',
     navServices: 'Services',
     navWhyUs: 'Why AP Trees',
+    navProcess: 'Process',
+    navReviews: 'Reviews',
+    navFaq: 'FAQ',
     navAbout: 'About Us',
     navContact: 'Contact',
     searchPlaceholder: 'Search tree services...',
@@ -32,6 +35,49 @@ export const translations = {
     whatWeDoDesc: 'From fine pruning and dangerous tree removals to stump grinding, storm hazard clearing, and health assessments, we handle every aspect of tree maintenance safely and efficiently.',
     whyTrustUs: 'Why Trust Us',
     whyTrustUsDesc: 'We treat every property like our own. Our experienced crew works with modern safety equipment, clear upfront estimates, and complete cleanup after every job.',
+    
+    // Process section
+    processHeading: 'Simple 4-Step Process',
+    processSub: 'From initial contact to final cleanup, we make tree care effortless and safe for your property.',
+    step1Title: 'Free Consultation',
+    step1Desc: 'We inspect your trees on-site, assess hazards, and understand your property goals.',
+    step2Title: 'Clear Upfront Estimate',
+    step2Desc: 'Get a transparent, detailed estimate with no hidden costs or surprises.',
+    step3Title: 'Safe Expert Execution',
+    step3Desc: 'Our certified team carries out the work using advanced rigging and safety gear.',
+    step4Title: 'Thorough Site Cleanup',
+    step4Desc: 'We chip debris, rake lawns, and leave your yard spotless and protected.',
+
+    // Emergency Banner
+    emergencyTitle: '24/7 Emergency Tree Service',
+    emergencySub: 'Storm damage or dangerous hanging limbs? Our crew is on call for rapid response across Long Island.',
+    emergencyCallBtn: 'Emergency Call (631) 943-2157',
+
+    // Testimonials
+    testimonialsHeading: 'What Our Clients Say',
+    testimonialsSub: 'Hear from homeowners and business managers who trust AP Trees with their outdoor spaces.',
+    review1Text: 'AP Trees did an exceptional job removing a massive dangerous oak near our roof. Prompt, safe, and immaculate cleanup!',
+    review1Author: 'Michael R.',
+    review1Location: 'Huntington, NY',
+    review2Text: 'The best tree service on Long Island. Professional crew, reasonable pricing, and they arrived right on time.',
+    review2Author: 'Sarah D.',
+    review2Location: 'Cold Spring Harbor, NY',
+    review3Text: 'Our mature pine trees look healthy and beautifully pruned. Highly recommend their arborist expertise.',
+    review3Author: 'David L.',
+    review3Location: 'Northport, NY',
+
+    // FAQ Section
+    faqHeading: 'Frequently Asked Questions',
+    faqSub: 'Common questions about our tree care services, estimates, and safety practices.',
+    faq1Q: 'Do you offer free estimates?',
+    faq1A: 'Yes, we provide 100% free, no-obligation on-site estimates for all residential and commercial tree services.',
+    faq2Q: 'Are you licensed and insured?',
+    faq2A: 'Absolutely. We carry comprehensive liability and workers’ compensation insurance to guarantee complete property protection.',
+    faq3Q: 'Do you provide emergency storm service?',
+    faq3A: 'Yes, we have 24/7 emergency crews ready to dispatch for fallen trees, power line hazards, and storm damage.',
+    faq4Q: 'When is the best time of year to prune trees?',
+    faq4A: 'Late winter and early spring are ideal for most species, though hazard and deadwood pruning can be performed year-round.',
+
     footerDesc: 'Reliable tree care for healthier trees, safer properties, and beautiful outdoor spaces.',
     navigation: 'Navigation',
     company: 'Company',
@@ -51,6 +97,9 @@ export const translations = {
     freeEstimate: 'Estimado Gratis',
     navServices: 'Servicios',
     navWhyUs: 'Por Qué AP Trees',
+    navProcess: 'Proceso',
+    navReviews: 'Opiniones',
+    navFaq: 'Preguntas',
     navAbout: 'Sobre Nosotros',
     navContact: 'Contacto',
     searchPlaceholder: 'Buscar servicios de árboles...',
@@ -78,6 +127,49 @@ export const translations = {
     whatWeDoDesc: 'Desde podas especializadas y remociones peligrosas hasta trituración de tocones, limpieza tras tormentas y evaluaciones de salud, realizamos cada trabajo con total seguridad y eficiencia.',
     whyTrustUs: 'Por Qué Confiar en Nosotros',
     whyTrustUsDesc: 'Cuidamos cada propiedad como si fuera la nuestra. Nuestro equipo experimentado trabaja con equipo moderno de seguridad, presupuestos claros y limpieza completa después de cada servicio.',
+    
+    // Process section
+    processHeading: 'Proceso Simple en 4 Pasos',
+    processSub: 'Desde la consulta inicial hasta la limpieza final, hacemos que el cuidado de sus árboles sea seguro y sin complicaciones.',
+    step1Title: 'Consulta Gratuita',
+    step1Desc: 'Inspeccionamos sus árboles en el sitio, evaluamos riesgos y entendemos sus objetivos.',
+    step2Title: 'Presupuesto Claro y Detallado',
+    step2Desc: 'Reciba un presupuesto transparente sin costos ocultos ni sorpresas.',
+    step3Title: 'Ejecución Segura y Profesional',
+    step3Desc: 'Nuestro equipo certificado realiza el trabajo con maquinaria moderna y protocolos estrictos de seguridad.',
+    step4Title: 'Limpieza Total del Terreno',
+    step4Desc: 'Trituramos ramas, rastrillamos el césped y dejamos su propiedad impecable.',
+
+    // Emergency Banner
+    emergencyTitle: 'Servicio de Emergencia 24/7',
+    emergencySub: '¿Daños por tormenta o ramas peligrosas? Nuestro equipo está listo para respuesta inmediata en Long Island.',
+    emergencyCallBtn: 'Llamada de Emergencia (631) 943-2157',
+
+    // Testimonials
+    testimonialsHeading: 'Lo Que Dicen Nuestros Clientes',
+    testimonialsSub: 'Conozca la experiencia de propietarios y administradores que confían en AP Trees.',
+    review1Text: 'AP Trees realizó un trabajo excepcional retirando un roble peligroso cerca de nuestro techo. ¡Rápidos, seguros y muy limpios!',
+    review1Author: 'Michael R.',
+    review1Location: 'Huntington, NY',
+    review2Text: 'El mejor servicio de árboles en Long Island. Equipo profesional, precios justos y llegaron a tiempo.',
+    review2Author: 'Sarah D.',
+    review2Location: 'Cold Spring Harbor, NY',
+    review3Text: 'Nuestros pinos se ven sanos y perfectamente podados. Recomiendo totalmente su conocimiento técnico.',
+    review3Author: 'David L.',
+    review3Location: 'Northport, NY',
+
+    // FAQ Section
+    faqHeading: 'Preguntas Frecuentes',
+    faqSub: 'Respuestas claras a las dudas más comunes sobre nuestros servicios y cotizaciones.',
+    faq1Q: '¿Ofrecen presupuestos gratuitos?',
+    faq1A: 'Sí, ofrecemos presupuestos presenciales 100% gratuitos y sin compromiso para todos nuestros servicios.',
+    faq2Q: '¿Tienen licencias y seguro completo?',
+    faq2A: 'Totalmente. Contamos con seguro de responsabilidad civil y compensación para trabajadores garantizando su tranquilidad.',
+    faq3Q: '¿Atienden emergencias por tormentas?',
+    faq3A: 'Sí, disponemos de cuadrillas activas 24/7 para árboles caídos o situaciones de alto riesgo.',
+    faq4Q: '¿Cuál es la mejor época para podar?',
+    faq4A: 'A finales de invierno y principios de primavera es ideal, aunque la poda de seguridad y ramas secas se realiza todo el año.',
+
     footerDesc: 'Cuidado confiable de árboles para propiedades más seguras y espacios al aire libre impecables.',
     navigation: 'Navegación',
     company: 'Empresa',
@@ -92,4 +184,3 @@ export const translations = {
     subscribe: 'Connect'
   }
 };
-
